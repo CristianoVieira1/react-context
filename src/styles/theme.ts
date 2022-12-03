@@ -48,7 +48,7 @@ export default {
     separator: "#E3E3E8",
     bloqueioLinear: "linear-gradient(#434343, #000000);",
     borderSearch: "#E5E7EB",
-    mainBg: "#06092B",
+    mainBg: "#222",
   },
   spacings: {
     xxsmall: "0.8rem",

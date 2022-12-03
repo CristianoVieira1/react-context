@@ -1,32 +1,39 @@
-import { createGlobalStyle, css } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 
   * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
-    &::before,
-    &::after {
-      box-sizing: inherit;
-    }
+    font-family: "poppins", sans-serif;
   }
 
-  ${({ theme }) => css`
-    html {
-      font-size: 62.5%;
+    body {
+      background-color: #222;
+      display: flex;
+      min-height: 100vh;
+      overflow-x: hidden; 
     }
 
-    body {
-      ${({ theme }) => css`
-        font-family: ${theme.font.family};
-        font-size: ${theme.font.sizes.medium};
-      `}
-    }
-  `}
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #549ba0 #ffffff;
+  }
+
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #549ba0;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
 
 `;
 

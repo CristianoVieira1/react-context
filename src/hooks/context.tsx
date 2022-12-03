@@ -12,7 +12,10 @@ interface LanguagesProviderProps {
 export const LanguagesContext = createContext({} as LanguagesContextProps);
 
 export const LanguagesProvider = ({ children }: LanguagesProviderProps) => {
-  const [languages, setLanguages] = useState<Array<string>>(["JAVA", "C#"]);
+  const [languages, setLanguages] = useState<Array<string>>([
+    "ReactJS",
+    "React-native",
+  ]);
 
   function addLanguages(language: string) {
     setLanguages([...languages, language]);
